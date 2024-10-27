@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Brief description of the site and link to another website for more information.">
-    <title>Your Website Title</title>
+    <title>Akuutti</title>
     <style>
         /* Basic styling for layout and typography */
         body {
@@ -53,7 +53,7 @@
 
     <!-- Header Section -->
     <header>
-        <h1>Your Website Header</h1>
+        <h1>Hulluua meininkiä</h1>
         <p>Ibumax</p>
     </header>
 
@@ -61,7 +61,7 @@
     <div class="container">
         <h2>Tietoa nettisivustani</h2>
         <p>
-            Tervetuloa hullulle nettisivulleni jophon tulee aina päivityksiä kun jaksan tehä[explain the purpose of your website in a sentence or two].
+           <a3> Tervetuloa hullulle nettisivulleni johon tulee aina päivityksiä kun jaksan tehä.</a3>
         </p>
         
         <h3>Käy uutissivullamme</h3>
@@ -77,11 +77,20 @@
 
     <!-- Footer Section -->
     <footer>
-        <p>&copy; 2024 Bals. All rights reserved.</p>
+        <p>&copy; 2024 Bals. All balls reserved.</p>
     </footer>
 
 </body>
 </html>
+
+<a href="https://youtu.be/dQw4w9WgXcQ?si=VmtBQ7OnIHsHzbad">
+    <button>Älä klikkaa</button>
+  </a>
+
+  <a href="https://whatsapp.com/channel/0029VaScJJdGOj9lt7BrUe0z">
+    <button>Mun Whatsapp kanava</button>
+  </a>
+  
 
 <!-- Image in the top-right corner -->
 <div class="top-right-container">
@@ -89,3 +98,33 @@
     <p class="top-right-text">Nettisivun tekijä.</p>
 </div>
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Background Audio Only</title>
+</head>
+<body>
+
+  <!-- Background audio setup -->
+  <audio id="background-audio" autoplay loop>
+    <source src="WelcomeToTheJungle.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <script>
+    // Attempt to autoplay on page load with a muted workaround for some browsers
+    const audio = document.getElementById('background-audio');
+
+    // Unmute audio after ensuring autoplay starts
+    audio.muted = true;
+    audio.play().then(() => {
+      audio.muted = false;
+    }).catch(error => {
+      console.log('Autoplay blocked; user interaction needed');
+    });
+  </script>
+
+</body>
+</html>
