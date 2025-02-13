@@ -1,123 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Brief description of the site and link to another website for more information.">
-    <title>Akuutti</title>
-    <style>
-        /* Basic styling for layout and typography */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f9f9f9;
-            color: #333;
-        }
-        header, footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 1em;
-        }
-        .container {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        h1 {
-            color: #333;
-        }
-        p {
-            line-height: 1.6;
-        }
-        .link-button {
-            display: inline-block;
-            padding: 10px 20px;
-            margin: 20px 0;
-            color: #fff;
-            background-color: #007BFF;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: background-color 0.3s;
-        }
-        .link-button:hover {
-            background-color: #0056b3;
-        }
-    </style>
+    <title>Uutissivusto</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-    <!-- Header Section -->
     <header>
-        <h1>Hulluua meininkiä</h1>
-        <p>Ibumax</p>
+        <h1>Uutissivusto</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Etusivu</a></li>
+                <li><a href="#">Uutiset</a></li>
+                <li><a href="#">Yhteystiedot</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <!-- Main Content Section -->
-    <div class="container">
-        <h2>Tietoa nettisivustani</h2>
-        <p>
-           <a3> Tervetuloa hullulle nettisivulleni johon tulee aina päivityksiä kun jaksan tehä.</a3>
-        </p>
-        
-        <h3>Käy uutissivullamme</h3>
-        <p>
-            Tällä sivustolla näette hulluimmat uutiset koskaan.
-        </p>
-        
-        <!-- External Link Button -->
-        <a href="https://opetus365-my.sharepoint.com/personal/aku_raiskio_opetus_tampere_fi/Documents/Uutiset%2027102024.pdf" target="_blank" class="link-button">
-            Viimeisimmät uutiset
-        </a>
-    </div>
+    <main>
+        <article>
+            <h2>Uutisotsikko 1</h2>
+            <p><small>Julkaistu: 13.2.2025</small></p>
+            <p>Tässä on uutisen sisältö. Tämä on esimerkki uutisartikkelista.</p>
+        </article>
 
-    <!-- Footer Section -->
+        <article>
+            <h2>Uutisotsikko 2</h2>
+            <p><small>Julkaistu: 12.2.2025</small></p>
+            <p>Toinen uutinen, jossa käsitellään ajankohtaisia tapahtumia.</p>
+        </article>
+    </main>
+
     <footer>
-        <p>&copy; 2024 Bals. All balls reserved.</p>
+        <p>&copy; 2025 Uutissivusto</p>
     </footer>
-
-</body>
-</html>
-
-<a href="https://youtu.be/dQw4w9WgXcQ?si=VmtBQ7OnIHsHzbad">
-    <button>Älä klikkaa</button>
-  </a>
-
-  <a href="https://whatsapp.com/channel/0029VaScJJdGOj9lt7BrUe0z">
-    <button>Mun Whatsapp kanava</button>
-  </a>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Background Audio Only</title>
-</head>
-<body>
-
-  <!-- Background audio setup -->
-  <audio id="background-audio" autoplay loop>
-    <source src="WelcomeToTheJungle.mp3" type="audio/mpeg">
-    Your browser does not support the audio element.
-  </audio>
-
-  <script>
-    // Attempt to autoplay on page load with a muted workaround for some browsers
-    const audio = document.getElementById('background-audio');
-
-    // Unmute audio after ensuring autoplay starts
-    audio.muted = true;
-    audio.play().then(() => {
-      audio.muted = false;
-    }).catch(error => {
-      console.log('Autoplay blocked; user interaction needed');
-    });
-  </script>
-
 </body>
 </html>
